@@ -37,5 +37,5 @@ func Handler(writer http.ResponseWriter, request *http.Request) {
 var templates = template.Must(template.ParseFiles("templates/page.html"))
 func main() {
     http.HandleFunc("/", Handler)
-    log.Fatal(http.ListenAndServe(":8080", nil))
+    log.Fatal(http.ListenAndServe(":80", nil))
 }
